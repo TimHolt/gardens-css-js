@@ -1,0 +1,168 @@
+body { font-family: Museo Sans, Helvetica, Arial, sans-serif; background-color: lightgrey; }
+
+@media screen and (min-width: 1px) and (max-width: 479px), screen and (max-device-width: 479px)
+{
+  .page-width { width: 300px; }
+  #block-system-main-menu ul.menu li { clear: left; border-left: 0px !important; border-right: 0px !important; font-size: 20px; width: 280px; text-align: center; border-bottom: 1px solid lightgrey; padding-left: 0px; margin-left: 0px;}
+  #block-system-main-menu ul.menu li.first { border-right: 0px;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 0px !important;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomleft: 0px !important;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px !important;
+  }
+  #block-system-main-menu ul.menu li.last { border-bottom: none; -webkit-border-bottom-left-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -moz-border-radius-bottomright: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .node .meta { display: none; }
+  div.field-type-media .media-gallery-item {
+    padding: 5px;
+  }
+  div#header-inner.stack-header-inner {
+    background-image: url('https://timtest3.enterprise-g1-staging.acquia-sites.com/sites/timtest3.enterprise-g1-staging.acquia-sites.com/files/styles/media_gallery_large/public/201301/03025_insomnia_2560x1600.jpg');
+    background-position:center;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 700px) {
+  .page-width, .responsive-flex { width: 480px }
+  #navigation #block-system-main-menu ul.menu li { font-size: 14px; padding-left: 8px; padding-right: 8px; }
+  div#header-inner.stack-header-inner {
+    background-image: url('https://timtest3.enterprise-g1-staging.acquia-sites.com/sites/timtest3.enterprise-g1-staging.acquia-sites.com/files/styles/media_gallery_large/public/201301/03148_officesatnight_1920x1080.jpg');
+    background-position:center;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 959px) {
+  .page-width, .responsive-flex { width: 700px }
+}
+
+#content #content-inner { padding-top: 0px; }
+
+.wrapper-content, .stack-navigation, .field-type-media .media-gallery-item, .stack-header-inner {
+  background-color: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  position: relative;
+  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  padding-top: 0;
+  padding-bottom: 1em;
+}
+.wrapper-content:before, .wrapper-content:after, .stack-navigation:before, .stack-navigation:after, .field-type-media .media-gallery-item:after, .field-type-media .media-gallery-item:before, .stack-header-inner:before, .stack-header-inner:after {
+  content:"";
+  position:absolute;
+  z-index:-2;
+}
+
+.wrapper-content:before, .stack-navigation:before, .field-type-media .media-gallery-item:before, .stack-header-inner:before {
+  top:10px;
+  bottom:10px;
+  left:0;
+  right:50%;
+  -webkit-box-shadow:0 0 15px rgba(0,0,0,0.6);
+  -moz-box-shadow:0 0 15px rgba(0,0,0,0.6);
+  box-shadow:0 0 15px rgba(0,0,0,0.6);
+  -moz-border-radius:10px / 100px;
+  border-radius:10px / 100px;
+}
+.wrapper-content:before, .stack-navigation:before, .field-type-media .media-gallery-item:before, .stack-header-inner:before {
+  top:50%;
+  bottom:0;
+  left:10px;
+  right:10px;
+  -moz-border-radius:100px / 10px;
+  border-radius:100px / 10px;
+}
+#navigation.stack-navigation {
+  padding-bottom: 0px;
+}
+
+#navigation .box {
+  padding: 0px;
+}
+
+#block-system-main-menu ul.menu li {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 30px;
+  display: inline-block;
+  height: 30px;
+  padding-top: 2px;
+  border-right: 1px solid lightgrey;
+  border-left: 0px;
+  padding-left: 10px;
+  margin-left: 0px;
+  padding-right: 10px;
+  margin-right: 0px;
+}
+
+#block-system-main-menu ul.menu li.first {
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-left: 10px;
+  border-left: none;
+}
+
+#block-system-main-menu a {
+  color: grey;
+}
+
+#block-system-main-menu a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+#block-system-main-menu ul.menu li:hover {
+  background-color: #DDD;
+}
+
+.wrapper-content-inner {
+  padding: 10px;
+}
+
+.field-type-media.mg-col {
+  margin: 0px;
+}
+.field-type-media .media-gallery-item {
+  border: 1px solid lightgrey;
+  padding: 10px;
+}
+
+.field-type-media .media-gallery-item img {
+  -we bkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#header-inner.stack-header-inner {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  height: 100px;
+  background-image: url('https://timtest3.enterprise-g1-staging.acquia-sites.com/sites/timtest3.enterprise-g1-staging.acquia-sites.com/files/styles/media-gallery-xl/public/201301/02269_maldiviansunset_2560x1600.jpg');
+  background-position:center;
+}
+
+#header-inner #site-name, #header-inner #site-name a, #header-inner #site-name a span {
+  color: white;
+  line-height: 110px;
+  z-index: 2;
+  padding-left: 10px;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+  0px 8px 13px rgba(0,0,0,0.1),
+  0px 18px 23px rgba(0,0,0,0.1);
+}
